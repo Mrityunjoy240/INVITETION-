@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Anamika and Subhadip Wedding//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:lagna-20261213@anamika-subhadip.wedding
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Kolkata:20261213T165000
+DTEND;TZID=Asia/Kolkata:20261214T000000
+SUMMARY:Bibaho Lagna · Wedding ceremony — Anamika & Subhadip
+DESCRIPTION:You are warmly invited to celebrate the Bibaho Lagna · Wedding ceremony of Anamika & Subhadip.
+LOCATION:Kumudini Guest House, Jogalbari, Garmoyna, Moyna, Purba Medinipur, West Bengal
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

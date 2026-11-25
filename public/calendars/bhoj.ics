@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Anamika and Subhadip Wedding//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bhoj-20261213@anamika-subhadip.wedding
+DTSTAMP:20261123T000000Z
+DTSTART;TZID=Asia/Kolkata:20261213T190000
+DTEND;TZID=Asia/Kolkata:20261213T220000
+SUMMARY:Preetibhoj · Wedding feast — Anamika & Subhadip
+DESCRIPTION:You are warmly invited to celebrate the Preetibhoj · Wedding feast of Anamika & Subhadip.
+LOCATION:Kumudini Guest House, Jogalbari, Garmoyna, Moyna, Purba Medinipur, West Bengal
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
