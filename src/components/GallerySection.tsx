@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { WEDDING_DATA } from "@/data/wedding-data";
 import { BengaliAlpanaDivider } from "./DecorativeIcons";
-import { Camera, Maximize2, X, ChevronLeft, ChevronRight, Eye } from "lucide-react";
+import { Camera, Maximize2, X, ChevronLeft, ChevronRight } from "lucide-react";
 
 export const GallerySection: React.FC = () => {
   const { lang } = useLanguage();

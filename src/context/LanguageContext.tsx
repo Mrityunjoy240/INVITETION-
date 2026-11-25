@@ -20,14 +20,17 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [lang, setLangState] = useState<Language>("bn");
 
   useEffect(() => {
-    try {
-      const saved = localStorage.getItem("wedding_lang") as Language;
-      if (saved === "bn" || saved === "en") {
-        setLangState(saved);
+    const id = requestAnimationFrame(() => {
+      try {
+        const saved = localStorage.getItem("wedding_lang") as Language;
+        if (saved === "bn" || saved === "en") {
+          setLangState(saved);
+        }
+      } catch {
+        // ignore
       }
-    } catch {
-      // ignore
-    }
+    });
+    return () => cancelAnimationFrame(id);
   }, []);
 
   const toggleLang = () => {

@@ -3,7 +3,7 @@
 import React from "react";
 import { useLanguage } from "@/context/LanguageContext";
 import { WEDDING_DATA } from "@/data/wedding-data";
-import { RoyalFiligreeDivider, CornerFlourish, RoyalCrestEmblem } from "./RoyalHeirloomElements";
+import { RoyalFiligreeDivider, CornerFlourish } from "./RoyalHeirloomElements";
 
 export const InvitationLetter: React.FC = () => {
   const { lang } = useLanguage();

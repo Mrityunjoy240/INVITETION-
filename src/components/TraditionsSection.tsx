@@ -2,8 +2,8 @@
 
 import React from "react";
 import { useLanguage } from "@/context/LanguageContext";
-import { RoyalFiligreeDivider, CornerFlourish, RoyalCrestEmblem } from "./RoyalHeirloomElements";
-import { Sparkles, Heart, Bell, Music2, Sun, Moon } from "lucide-react";
+import { RoyalFiligreeDivider, CornerFlourish } from "./RoyalHeirloomElements";
+import { Sparkles, Heart, Bell, Sun } from "lucide-react";
 
 export const TraditionsSection: React.FC = () => {
   const { lang } = useLanguage();

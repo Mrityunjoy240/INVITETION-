@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import { useLanguage } from "@/context/LanguageContext";
-import { RoyalCrestEmblem } from "./RoyalHeirloomElements";
 import { Music, VolumeX, Menu, X, Globe, RotateCcw } from "lucide-react";
 
 interface HeaderProps {

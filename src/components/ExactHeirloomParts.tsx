@@ -1,14 +1,13 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 // The exact decorative separator from Royal Heirloom
 export const RoyalHeirloomTitle: React.FC<{
   title: string;
   subtitle?: string;
   description?: string;
-  light?: boolean;
-}> = ({ title, subtitle, description, light = false }) => {
+}> = ({ title, subtitle, description }) => {
   return (
     <div className="flex flex-col items-center justify-center text-center select-none w-full max-w-[420px] mx-auto px-4 my-2">
       {subtitle && (
@@ -67,13 +66,6 @@ const STATIC_PETALS = [
 ];
 
 export const FallingPetals: React.FC = () => {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
-
   return (
     <div className="absolute inset-0 pointer-events-none z-[5] overflow-hidden w-full h-full">
       {STATIC_PETALS.map((p, idx) => (

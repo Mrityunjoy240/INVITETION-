@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { useLanguage } from "@/context/LanguageContext";
 import { RoyalFiligreeDivider, CornerFlourish } from "./RoyalHeirloomElements";
 import { Users, Home, MapPin } from "lucide-react";

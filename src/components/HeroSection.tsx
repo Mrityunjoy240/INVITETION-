@@ -5,14 +5,15 @@ import { useLanguage } from "@/context/LanguageContext";
 import { WEDDING_DATA } from "@/data/wedding-data";
 import { RoyalCrestEmblem, RoyalFiligreeDivider, RoyalHeirloomArch } from "./RoyalHeirloomElements";
 import { SacredMandala } from "./DecorativeIcons";
-import { Calendar, MapPin, ChevronDown, Sparkles } from "lucide-react";
+import { MapPin, ChevronDown, Sparkles } from "lucide-react";
 
 export const HeroSection: React.FC = () => {
   const { lang } = useLanguage();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    const id = requestAnimationFrame(() => setMounted(true));
+    return () => cancelAnimationFrame(id);
   }, []);
 
   return (

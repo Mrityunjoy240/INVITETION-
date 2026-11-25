@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useMemo } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 // 1. Exact Letter-by-Letter Blur & Shimmer Reveal from Royal Heirloom
@@ -19,14 +20,14 @@ export const AnimatedNameReveal: React.FC<{
   const [shimmerReady, setShimmerReady] = useState(false);
 
   useEffect(() => {
-    if (isTriggered) {
-      const timeout = setTimeout(() => {
-        setShimmerReady(true);
-      }, (delay + letters.length * 0.14 + 2) * 1000);
-      return () => clearTimeout(timeout);
-    } else {
+    if (!isTriggered) return;
+    const timeout = setTimeout(() => {
+      setShimmerReady(true);
+    }, (delay + letters.length * 0.14 + 2) * 1000);
+    return () => {
+      clearTimeout(timeout);
       setShimmerReady(false);
-    }
+    };
   }, [isTriggered, delay, letters.length]);
 
   return (
@@ -115,9 +116,11 @@ export const FlyingAirplane: React.FC = () => (
       transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
       className="absolute top-0 w-[200px] drop-shadow-[0_4px_10px_rgba(70,35,15,0.3)] select-none"
     >
-      <img
+      <Image
         src="/assets/aeroplane-savethedate.webp"
         alt="Save the Date Aeroplane"
+        width={200}
+        height={64}
         className="w-full h-auto object-contain pointer-events-none transform -rotate-12"
       />
     </motion.div>

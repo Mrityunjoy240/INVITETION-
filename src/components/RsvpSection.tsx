@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
-import { WEDDING_DATA } from "@/data/wedding-data";
 import { BengaliAlpanaDivider } from "./DecorativeIcons";
 import { Send, CheckCircle2, MessageSquare, Share2, Copy, Check } from "lucide-react";
 import confetti from "canvas-confetti";
